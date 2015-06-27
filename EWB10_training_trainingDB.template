@@ -1,0 +1,38 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+"instanceidb1f4e3f": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "DisableApiTermination": "FALSE",
+        "ImageId": "ami-7b9dfd0c",
+        "InstanceType": "m3.medium",
+        "KeyName": "idbseuedservices",
+        "Monitoring": "false",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EWB10 Oracle"
+          }
+        ],
+        "NetworkInterfaces": [
+          {
+            "DeleteOnTermination": "true",
+            "DeviceIndex": 0,
+            "SubnetId": "subnet-c24bcbb5"
+          }
+        ]
+      }
+    },
+    "assoc1": {
+      "Type": "AWS::EC2::EIPAssociation",
+      "Properties": {
+        "InstanceId": {
+          "Ref": "instanceidb1f4e3f"
+        },
+        "EIP": "52.17.125.249"
+      }
+    }
+  },
+  "Description": "Create EWB10 Schema with Training Database "
+}
