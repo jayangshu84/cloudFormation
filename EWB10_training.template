@@ -7,12 +7,12 @@
         "DisableApiTermination": "FALSE",
         "ImageId": "ami-7b9dfd0c",
         "InstanceType": "m3.medium",
-        "KeyName": "idbseuedservices",
+        "KeyName": "services",
         "Monitoring": "false",
         "Tags": [
           {
             "Key": "Name",
-            "Value": "EWB10 Oracle"
+            "Value": "DB Oracle"
           }
         ],
         "NetworkInterfaces": [
@@ -35,7 +35,7 @@
         "Tags": [
           {
             "Key": "Name",
-            "Value": "EWB10 App and Spreadsheet Server"
+            "Value": "App Server"
           }
         ],
         "NetworkInterfaces": [
@@ -66,5 +66,5 @@
       }
     }
   },
-  "Description": "Create EWB10 Stack with Training Database "
+  "Description": "Create App Stack with Database "
 }
