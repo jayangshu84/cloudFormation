@@ -7,7 +7,7 @@
         "DisableApiTermination": "FALSE",
         "ImageId": "ami-7b9dfd0c",
         "InstanceType": "m3.medium",
-        "KeyName": "idbseuedservices",
+        "KeyName": "services",
         "Monitoring": "false",
         "Tags": [
           {
@@ -34,5 +34,5 @@
       }
     }
   },
-  "Description": "Create EWB10 Schema with Training Database "
+  "Description": "Create DB Schema "
 }
